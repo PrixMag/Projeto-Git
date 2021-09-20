@@ -1,0 +1,50 @@
+<! Numero 2 - Faça um programa em JavaScript em que o usuário clicará com o mouse sobre um botão e em seguida uma mensagem de alerta será apresentada com uma mensagem qualquer. //->
+<! sinais para comentar no html5 //->
+
+
+<html>
+<head>
+<title> teste botao </title>
+<style>
+			
+		.container {
+			text-align:center;
+		}
+		
+		button {
+		
+			background: #069;
+			color: white;
+			font-size: 32px;
+			padding: 8px 20px;
+			cursor:0;
+        		
+		}
+			
+
+	</style>
+
+</head>
+<body>
+	
+		<div class= "container"> <! tag container serve para alinhar toda a pagina automaticamente, mantendo o layout funcionando corretamente //->
+
+		<button id = "comecar"> Click Aqui!</button>
+	</div>
+
+	<script>
+		
+		var comecar = document.getElementById ('comecar');
+
+								//toda function deve possuir um retorno da funçao 
+
+		comecar.addEventListener ('click',function (){ 
+			window.alert ("Parabens, vc conseguiu!!!")
+				
+		}
+	)
+
+	</script>
+
+</body>
+</html>
